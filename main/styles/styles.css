@@ -6,6 +6,31 @@
     box-sizing: border-box;
 }
 
+
+/*barra navegation*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #000000;
+    align-items: center;
+}
+
+.imagen_logo {
+    padding: 15px;
+    width: 100px;
+}
+
+.barra {
+    padding: 20px;
+    margin-right: 50px;
+}
+
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -13,6 +38,14 @@ a {
     font-family: 'League Gothic';
     padding: 20px;
 }
+
+.Login_link {
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
 
 /*Landing*/
 
@@ -120,17 +153,101 @@ a {
     /* Cuando se agrega la clase "loaded", la imagen aparecerá gradualmente */
 }
 
+/*Footer*/
 
 
+footer {
+    background-color: #000;
+    color: white; 
+    padding: 20px; 
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.footer_boton {
+    background: #ffffff;
+    border: none;
+    padding: 10px;
+    height: 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'League Gothic';
+    transition: opacity 2s;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+.footer_boton:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.footer_misc_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_redes {
+    display: flex;
+    align-items: center;
+}
+
+.imagen_redes {
+    width: 41px;
+    height: 43px;
+}
+
+.footer_upc_logo_container {
+    margin-left: 20px;
+}
+
+.footer_upc_logo {
+    width: 106px;
+    height: 141px;
+}
+
+.footer_container {
+    display: flex;
+}
 
 @media screen and (max-width: 768px) {
 
+    /*Responsive headerAndFooter*/
+    
+    header {
+        flex-direction: column;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+ 
+    a {
+        padding: 5px;
+    }
+  
+    /*Responsive Home*/
+  
     .Inicial_contenedor {
         flex-direction: column;
         /* Cambia a dirección de columna para apilar los elementos */
         padding: 20px;
         /* Reduzca el relleno */
     }
-
-
+  
+    /*Responsive About Us*/
+  
+    .Contactanos_contendor{
+        flex-direction: column;
+    }
+  
 }
+
