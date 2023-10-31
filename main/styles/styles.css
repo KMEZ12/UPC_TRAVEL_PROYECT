@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 
+
 /*barra navegation*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -42,6 +44,113 @@ a {
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
+}
+
+
+/*Landing*/
+
+.Inicial_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0B0B0;
+    margin: 70px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.Frase_Principal {
+    background-color: rgba(0, 0, 0, 0.985);
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+/* UPC TRAVEL TITULO*/
+.Frase_Principal h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: 'League Gothic';
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+
+
+/* Estilos */
+.Disponible {
+    font-size: 25px;
+    /* Tamaño más pequeño */
+    font-family: 'League Gothic';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.frase_1 {
+    font-size: 25px;
+    /* Tamaño más pequeño */
+    font-family: 'League Gothic';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.frase_2 {
+    font-size: 25px;
+    /* Tamaño más pequeño */
+    font-family: 'League Gothic';
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Styles botones */
+
+.Botones-Principal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Botones-Principal img {
+    width: 70px;
+}
+
+
+/* Styles imagen Principal*/
+.Imagen_contenedor img {
+
+    width: 500px;
+    overflow: hidden;
+}
+
+.Imagen_contenedor .imagen-animada {
+    opacity: 0;
+    transition: opacity 2s;
+    /* Transición suave de 2 segundos para la opacidad */
+}
+
+.Imagen_contenedor .imagen-animada.loaded {
+    opacity: 1;
+    /* Cuando se agrega la clase "loaded", la imagen aparecerá gradualmente */
 }
 
 /*Footer*/
@@ -120,12 +229,25 @@ footer {
     .footer_container {
         flex-direction: column;
     }
-
-    .Contactanos_contendor{
-        flex-direction: column;
-    }
  
     a {
         padding: 5px;
     }
+  
+    /*Responsive Home*/
+  
+    .Inicial_contenedor {
+        flex-direction: column;
+        /* Cambia a dirección de columna para apilar los elementos */
+        padding: 20px;
+        /* Reduzca el relleno */
+    }
+  
+    /*Responsive About Us*/
+  
+    .Contactanos_contendor{
+        flex-direction: column;
+    }
+  
 }
+
